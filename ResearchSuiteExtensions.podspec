@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ResearchSuiteExtensions'
-  s.version          = '0.27.0'
+  s.version          = '0.28.0'
   s.summary          = 'ResearchSuiteExtensions provides components and helper functions for ResearchSuite based iOS applications.'
 
 # This description is used to generate tags and improve search results.
@@ -43,9 +43,7 @@ ResearchSuiteExtensions provides components and helper functions for ResearchSui
     core.resources = 'source/Core/Assets/Assets.xcassets'
     core.dependency 'ResearchSuiteExtensions/Common'
     core.dependency 'ResearchKit', '~> 1.4'
-    core.dependency 'SwiftyGif', '~> 4.2'
     core.dependency 'SnapKit'
-    core.dependency 'GiphyCoreSDK'
   end
 
   s.subspec 'RSTBSupport' do |rstb|
