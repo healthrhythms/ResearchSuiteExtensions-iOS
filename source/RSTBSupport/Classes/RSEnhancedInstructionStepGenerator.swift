@@ -12,7 +12,6 @@ import ResearchSuiteTaskBuilder
 import Gloss
 import SwiftyMarkdown
 import Mustache
-import SwiftyGif
 
 open class RSEnhancedInstructionStepGenerator: RSTBBaseStepGenerator {
     
