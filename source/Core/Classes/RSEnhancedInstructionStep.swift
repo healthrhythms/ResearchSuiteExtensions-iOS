@@ -15,11 +15,8 @@ open class RSEnhancedInstructionStep: RSStep {
         return RSEnhancedInstructionStepViewController.self
     }
     
-    open var gif: UIImage?
-    open var gifURL: URL?
     open var image: UIImage?
     open var audioTitle: String?
     open var moveForwardOnTap: Bool = false
     open var skipButtonText: String?
-
 }

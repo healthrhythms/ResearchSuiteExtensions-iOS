@@ -26,12 +26,6 @@ open class RSEnhancedInstructionStepViewController: RSQuestionViewController {
             imageView.contentMode = .scaleAspectFit
             stackedViews.append(imageView)
         }
-        else if let gifURL = step.gifURL {
-            let imageView = UIImageView()
-            imageView.contentMode = .scaleAspectFit
-            imageView.setGifFromURL(gifURL)
-            stackedViews.append(imageView)
-        }
         
         if let audioTitle = step.audioTitle,
             let path = Bundle.main.path(forResource: audioTitle, ofType: nil) {

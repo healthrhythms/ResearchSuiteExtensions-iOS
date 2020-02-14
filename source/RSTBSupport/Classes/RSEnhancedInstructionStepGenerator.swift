@@ -43,21 +43,7 @@ open class RSEnhancedInstructionStepGenerator: RSTBBaseStepGenerator {
         if let buttonText = stepDescriptor.buttonText {
             step.buttonText = helper.localizationHelper.localizedString(buttonText)
         }
-        
-        if let gifTitle = stepDescriptor.gifTitle,
-            let gifURL = Bundle.main.url(forResource: gifTitle, withExtension: nil) {
-            
-            //get url for local image
-            let gif = UIImage(gifName: gifTitle)
-            step.gif = gif
-            step.gifURL = gifURL
-        }
-        
-        if let gifURLString = stepDescriptor.gifURL,
-            let gifURL = URL(string: gifURLString) {
-            step.gifURL = gifURL
-        }
-        
+    
         if let imageTitle = stepDescriptor.imageTitle,
             let image = UIImage(named: imageTitle) {
             step.image = image
