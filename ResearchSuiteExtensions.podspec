@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ResearchSuiteExtensions'
-  s.version          = '0.28.0'
+  s.version          = '0.29.0'
   s.summary          = 'ResearchSuiteExtensions provides components and helper functions for ResearchSuite based iOS applications.'
 
 # This description is used to generate tags and improve search results.
@@ -22,11 +22,9 @@ ResearchSuiteExtensions provides components and helper functions for ResearchSui
                        DESC
 
   s.homepage         = 'https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'jdkizer9' => 'jdkizer9@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/ResearchSuite/ResearchSuiteExtensions-iOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/healthrhythms/ResearchSuiteExtensions-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
@@ -55,11 +53,4 @@ ResearchSuiteExtensions provides components and helper functions for ResearchSui
     rstb.dependency 'GRMustache.swift', '~> 4.0'
   end
 
-  # s.resource_bundles = {
-  #   'ResearchSuiteExtensions' => ['ResearchSuiteExtensions/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
